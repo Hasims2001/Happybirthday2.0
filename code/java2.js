@@ -1,4 +1,5 @@
-   var pages = document.getElementsByClassName('page');
+ var x = document.getElementById('wodin');
+var pages = document.getElementsByClassName('page');
   for(var i = 0; i < pages.length; i++)
     {
       var page = pages[i];
@@ -8,7 +9,9 @@
         }
     }
 
+
   document.addEventListener('DOMContentLoaded', function(){
+  
     for(var i = 0; i < pages.length; i++)
       {
         //Or var page = pages[i];
@@ -17,20 +20,24 @@
           {
             if (this.pageNum % 2 === 0)
               {
+                  
                 this.classList.remove('flipped');
                 this.previousElementSibling.classList.remove('flipped');
               }
-            else
+            
+             else
               {
+                  x.play();
+                           
                 this.classList.add('flipped');
                 this.nextElementSibling.classList.add('flipped');
               }
+        
            }
         }
+
+        
   })
 
 
-function music() {
-  var audio = document.getElementById("wodin");
-  audio.music();
-}
+     
