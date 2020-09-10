@@ -1,4 +1,5 @@
  var x = document.getElementById('wodin');
+ var y = document.getElementById('bday');
 var pages = document.getElementsByClassName('page');
   for(var i = 0; i < pages.length; i++)
     {
@@ -41,3 +42,12 @@ var pages = document.getElementsByClassName('page');
 
 
      
+  function pausing() {
+  }
+
+pausing();
+
+function audioplay() {
+    x.pause();
+  y.play();
+}
