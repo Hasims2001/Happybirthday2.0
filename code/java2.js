@@ -28,6 +28,7 @@ var pages = document.getElementsByClassName('page');
             
              else
               {
+                y.pause();
                   x.play();
                            
                 this.classList.add('flipped');
@@ -42,12 +43,13 @@ var pages = document.getElementsByClassName('page');
 
 
      
-  function pausing() {
-  }
 
-pausing();
+
 
 function audioplay() {
     x.pause();
   y.play();
+}
+function pauseaudio(){
+  y.pause();
 }
